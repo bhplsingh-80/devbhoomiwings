@@ -1,6 +1,7 @@
 import { Calendar, Users, TrendingUp, Cloud } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
+import { Link } from 'react-router-dom';
 
 const heroImage = "https://images.unsplash.com/photo-1632980277341-3c502ccd1d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoaW1hbGF5YSUyMG1vdW50YWlucyUyMGxha2V8ZW58MXx8fHwxNzY2NTk4NDgyfDA&ixlib=rb-4.1.0&q=80&w=1080";
 
@@ -46,12 +47,14 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white">
+              <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white" onClick={() => document.getElementById('itinerary-builder')?.scrollIntoView({ behavior: 'smooth' })}>
                 Build my itinerary
               </Button>
-              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/20">
-                Explore ready-made trips
-              </Button>
+              <Link to="/packages">
+                <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/20">
+                  Explore ready-made trips
+                </Button>
+              </Link>
             </div>
 
             {/* Stats */}

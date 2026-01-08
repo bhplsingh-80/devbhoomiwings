@@ -1,4 +1,4 @@
-import { MessageCircle, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Mountain } from 'lucide-react';
+import { MessageCircle, Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube, Mountain } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 
@@ -67,8 +67,8 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <Mountain className="h-10 w-10 text-white" />
               <div>
-                <div className="font-bold text-white">Devbhoomi</div>
-                <div className="text-xs text-slate-400">Travel OS for Uttarakhand</div>
+                <div className="font-bold text-white">Devbhoomi Wings</div>
+                <div className="text-xs text-slate-400">Travel OS for India</div>
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">
@@ -79,14 +79,14 @@ export function Footer() {
               <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-[#14b8a6] transition-colors">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-[#14b8a6] transition-colors">
-                <Twitter className="h-4 w-4" />
-              </a>
               <a href="https://www.instagram.com/devbhoomiwings" className="p-2 bg-white/5 rounded-full hover:bg-[#14b8a6] transition-colors">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-[#14b8a6] transition-colors">
+              <a href="https://www.linkedin.com/company/devbhoomi-travelmour-wings-private-limited/posts/?feedView=all" className="p-2 bg-white/5 rounded-full hover:bg-[#14b8a6] transition-colors">
                 <Linkedin className="h-4 w-4" />
+              </a>
+              <a href="https://www.youtube.com/@devbhoomiwings" className="p-2 bg-white/5 rounded-full hover:bg-[#14b8a6] transition-colors">
+                <Youtube className="h-4 w-4" />
               </a>
             </div>
           </div>

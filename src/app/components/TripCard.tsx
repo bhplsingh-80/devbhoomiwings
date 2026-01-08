@@ -3,6 +3,7 @@ import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { Link } from 'react-router-dom';
 
 interface TripCardProps {
   title: string;
@@ -107,16 +108,14 @@ export function TripCard({
         </div>
 
         {/* Action Button */}
-        <a
-          href={`https://wa.me/919311344463?text=Hi, I want to view details for ${title}`}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to={`/packages`}
           className="w-full"
         >
           <Button className="w-full bg-[#14b8a6] hover:bg-[#14b8a6]/90">
             View Details
           </Button>
-        </a>
+        </Link>
       </div>
     </Card>
   );

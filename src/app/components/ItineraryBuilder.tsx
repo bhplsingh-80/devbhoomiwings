@@ -290,21 +290,6 @@ export function ItineraryBuilder() {
                   </div>
                 </div>
               </Card>
-
-              <div className="grid grid-cols-3 gap-4">
-                <Button variant="outline" className="flex flex-col items-center gap-2 h-auto py-4">
-                  <CreditCard className="h-6 w-6" />
-                  <span className="text-xs">UPI</span>
-                </Button>
-                <Button variant="outline" className="flex flex-col items-center gap-2 h-auto py-4">
-                  <CreditCard className="h-6 w-6" />
-                  <span className="text-xs">Cards</span>
-                </Button>
-                <Button variant="outline" className="flex flex-col items-center gap-2 h-auto py-4">
-                  <CreditCard className="h-6 w-6" />
-                  <span className="text-xs">Net Banking</span>
-                </Button>
-              </div>
             </div>
           )}
 

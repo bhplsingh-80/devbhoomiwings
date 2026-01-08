@@ -10,6 +10,7 @@ import { ReviewsSection } from '../components/ReviewsSection';
 import { Footer } from '../components/Footer';
 import { NewsTicker } from '../components/NewsTicker';
 import { SEO, SchemaMarkup } from '../components/SEO';
+import { Button } from '../components/ui/button';
 
 export function HomePage() {
   const schemaData = {
@@ -17,7 +18,7 @@ export function HomePage() {
     "@type": "TravelAgency",
     "name": "Devbhoomi Wings",
     "url": "https://devbhoomiwings.com",
-    "logo": "/src/assets/devbhoomi.png",
+    "logo": "/devbhoomi.png",
     "description": "Affordable travel packages for Pithoragarh, Kashmir, and North India",
     "telephone": "+91 93113 44463",
     "email": "info@devbhoomiwings.com",
@@ -70,8 +71,43 @@ export function HomePage() {
             {/* Stays & Experiences */}
             <StaysExperiences />
             
-            {/* Itinerary Builder */}
-            <ItineraryBuilder />
+            {/* Itinerary Builder Button */}
+            <section id="itinerary-builder" className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+              <div className="container mx-auto px-4 text-center">
+                <div className="inline-block px-4 py-1.5 rounded-full bg-[#14b8a6]/10 border border-[#14b8a6]/20 text-[#14b8a6] text-sm mb-4">
+                  Build Your Journey
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#0f172a] mb-4">
+                  Plan Your Perfect Trip
+                </h2>
+                <p className="text-slate-600 max-w-2xl mx-auto mb-8">
+                  Create your perfect Devbhoomi experience in five simple steps. 
+                  Our smart system suggests the best routes and experiences.
+                </p>
+                <div className="mb-8">
+                  <img 
+                    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800" 
+                    alt="Travel planning" 
+                    className="rounded-lg shadow-lg mx-auto max-w-md"
+                  />
+                </div>
+                <Button 
+                  size="lg" 
+                  className="bg-[#14b8a6] hover:bg-[#14b8a6]/90"
+                  onClick={() => {
+                    const element = document.getElementById('itinerary-builder');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  Start Building Your Itinerary
+                </Button>
+              </div>
+            </section>
+            
+            {/* Real Itinerary Builder */}
+            <div id="itinerary-builder">
+              <ItineraryBuilder />
+            </div>
             
             {/* Reviews Section */}
             <ReviewsSection />

@@ -9,8 +9,8 @@ import {
   DropdownMenuTrigger,
 } from './ui/dropdown-menu';
 import { useAuth } from '../../context/AuthContext';
-import { WeatherWidget } from './WeatherWidget';
-import logo from '../../assets/devbhoomi.png'; // Uncomment when logo file is added
+
+// import logo from '../../assets/devbhoomi.png'; // Uncomment when logo file is added
 
 const navItems = [
   { label: 'Home', path: '/' },
@@ -20,6 +20,7 @@ const navItems = [
   { label: 'Book Cabs', path: '/book-cabs' },
   { label: 'Stays', path: '/stays' },
   { label: 'About', path: '/about' },
+  { label: 'Team', path: '/team' },
   { label: 'Contact', path: '/contact' },
 ];
 
@@ -38,12 +39,12 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Devbhoomi Wings" className="h-8 w-auto" />
+            <img src="/devbhoomi.png" alt="Devbhoomi Wings" className="h-8 w-auto" />
             {/* <div className="h-8 w-8 bg-emerald-600 rounded flex items-center justify-center">
               <span className="text-white font-bold text-sm">DW</span>
             </div> */}
             <div>
-              <div className="font-bold text-[#0f172a]">Devbhoomi</div>
+              <div className="font-bold text-[#0f172a]">Devbhoomi Wings</div>
               <div className="text-xs text-[#64748b]">Travel with trust</div>
             </div>
           </Link>
@@ -63,9 +64,6 @@ export function Header() {
 
           {/* Right Actions */}
           <div className="flex items-center gap-3">
-            {/* Weather Widget */}
-            <WeatherWidget />
-
             {/* Language Toggle */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -107,16 +105,7 @@ export function Header() {
                       Sign Out
                     </DropdownMenuItem>
                   </>
-                ) : (
-                  <>
-                    <DropdownMenuItem asChild>
-                      <Link to="/login" className="cursor-pointer">Login</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link to="/register" className="cursor-pointer">Register</Link>
-                    </DropdownMenuItem>
-                  </>
-                )}
+                ) : null}
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -169,24 +158,7 @@ export function Header() {
                     Sign Out
                   </button>
                 </>
-              ) : (
-                <>
-                  <Link
-                    to="/login"
-                    className="text-sm text-[#0f172a] hover:text-[#14b8a6] transition-colors py-2"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Login
-                  </Link>
-                  <Link
-                    to="/register"
-                    className="text-sm text-[#0f172a] hover:text-[#14b8a6] transition-colors py-2"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Register
-                  </Link>
-                </>
-              )}
+              ) : null}
             </div>
           </nav>
         )}

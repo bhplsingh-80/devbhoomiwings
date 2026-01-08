@@ -18,7 +18,7 @@ export function PrivacyPolicyPage() {
             
             <section>
               <h2 className="text-2xl font-semibold text-[#0f172a] mb-3">1. Information We Collect</h2>
-              <p>Devbhoomi Wings Pvt Ltd collects the following information:</p>
+              <p>DEVBHOOMI TRAVELMOUR WINGS INDIA PRIVATE LIMITED collects the following information:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Personal identification information (Name, email address, phone number)</li>
                 <li>Booking and travel preferences</li>

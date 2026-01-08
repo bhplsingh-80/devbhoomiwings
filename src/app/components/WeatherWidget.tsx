@@ -48,28 +48,8 @@ export const WeatherWidget = memo(function WeatherWidget() {
     };
 
     const getLocation = () => {
-      if (!navigator.geolocation) {
-        setError('Geolocation is not supported by this browser');
-        setLoading(false);
-        return;
-      }
-
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          fetchWeather(latitude, longitude);
-        },
-        (err) => {
-          console.error('Geolocation error:', err);
-          setError('Location access denied. Please enable location services.');
-          setLoading(false);
-        },
-        {
-          enableHighAccuracy: true,
-          timeout: 10000,
-          maximumAge: 300000 // 5 minutes
-        }
-      );
+      // Disabled location access, using default location
+      fetchWeather(28.6139, 77.2090); // Delhi coordinates
     };
 
     getLocation();

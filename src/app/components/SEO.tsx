@@ -13,7 +13,7 @@ export function SEO({
   title,
   description,
   keywords,
-  image = '/src/assets/devbhoomi.png',
+  image = '/devbhoomi.png',
   url = 'https://devbhoomiwings.com',
   type = 'website',
 }: SEOProps) {

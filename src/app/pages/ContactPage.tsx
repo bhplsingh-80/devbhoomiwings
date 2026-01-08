@@ -1,102 +1,13 @@
-import { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
-import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
-import { Input } from '../components/ui/input';
-import { Label } from '../components/ui/label';
-import { Textarea } from '../components/ui/textarea';
-import { supabase } from '../../lib/supabase';
 
 export function ContactPage() {
   const viewDetailsWhatsApp = '9311344462'; // +91 93113 44462
   const cabBookingWhatsApp = '9311344461'; // +91 93113 44461
   const techSupportPhone = '6395734224';
   const randomWhatsApp = '9690707002';
-  
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const sendEmailNotification = async (formData: { name: string; email: string; phone: string; message: string }) => {
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          to: 'bhupalsingh@devbhoomiwings.com',
-          subject: `New Contact Form Submission from ${formData.name}`,
-          message: `
-            <h2>New Contact Form Submission</h2>
-            <p><strong>Name:</strong> ${formData.name}</p>
-            <p><strong>Email:</strong> ${formData.email}</p>
-            <p><strong>Phone:</strong> ${formData.phone}</p>
-            <p><strong>Message:</strong> ${formData.message}</p>
-          `,
-          replyTo: formData.email,
-        }),
-      });
-      return response.ok;
-    } catch (error) {
-      console.error('Email notification error:', error);
-      return false;
-    }
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Validate form
-    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
-      setSubmitStatus('error');
-      setTimeout(() => setSubmitStatus('idle'), 3000);
-      return;
-    }
-
-    setIsSubmitting(true);
-    
-    try {
-      // Insert message into Supabase
-      const { data, error } = await supabase
-        .from('contact_messages')
-        .insert([
-          {
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            message: formData.message,
-            created_at: new Date().toISOString(),
-          }
-        ])
-        .select();
-
-      if (error) throw error;
-
-      // Send email notification (auto-send)
-      await sendEmailNotification(formData);
-
-      // Show success message
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', phone: '', message: '' });
-      
-      // Auto-clear success message after 5 seconds
-      setTimeout(() => setSubmitStatus('idle'), 5000);
-    } catch (error) {
-      console.error('Submission error:', error);
-      setSubmitStatus('error');
-      setTimeout(() => setSubmitStatus('idle'), 5000);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-[#fafaf9]">
@@ -106,63 +17,6 @@ export function ContactPage() {
           <h1 className="text-4xl font-bold text-[#0f172a] mb-12 text-center">Contact Us</h1>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Contact Form */}
-            <Card className="p-8">
-              <h2 className="text-2xl font-semibold mb-6">Send us a Message</h2>
-              {submitStatus === 'success' && (
-                <div className="mb-4 p-3 bg-green-50 border border-green-200 text-green-600 rounded-lg text-sm">
-                  Message sent successfully! We'll get back to you soon.
-                </div>
-              )}
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Label>Name</Label>
-                  <Input 
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="Your Name" 
-                    className="mt-2" 
-                    required
-                  />
-                </div>
-                <div>
-                  <Label>Email</Label>
-                  <Input 
-                    type="email" 
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="your@email.com" 
-                    className="mt-2" 
-                    required
-                  />
-                </div>
-                <div>
-                  <Label>Phone</Label>
-                  <Input 
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+91 1234567890" 
-                    className="mt-2" 
-                    required
-                  />
-                </div>
-                <div>
-                  <Label>Message</Label>
-                  <Textarea 
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Tell us about your travel plans..." 
-                    className="mt-2" 
-                    rows={4} 
-                    required
-                  />
-                </div>
-                <Button type="submit" disabled={isSubmitting} className="w-full bg-[#14b8a6]">
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </Button>
-              </form>
-            </Card>
-
             {/* Contact Info */}
             <div className="space-y-6">
               <Card className="p-6">

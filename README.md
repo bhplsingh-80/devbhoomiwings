@@ -8,6 +8,8 @@ Devbhoomi Wings is a premium travel operating system designed for NCR and Indian
 
 **Established**: Traveling and comforting travelers since 2018
 
+**Keywords**: travel packages India, cheap tour packages, budget travel, Uttarakhand tours, Kashmir packages, Pithoragarh travel, Rishikesh tours, Nainital holidays, Mussoorie trips, Delhi to Uttarakhand cabs, helicopter booking, bus booking India, local travel guides, adventure trips India, family vacations, corporate travel packages, NRI travel services, custom itineraries, travel operating system.
+
 ## ✨ Features
 
 ### 🎯 Smart Filtering System
@@ -20,27 +22,31 @@ Devbhoomi Wings is a premium travel operating system designed for NCR and Indian
 - Family trips, biker adventures, trekking expeditions
 - Corporate group packages
 - Detailed package cards with pricing and highlights
+- Best prices guaranteed for Pithoragarh, Kashmir, Uttarakhand tours
 
 ### 🗺️ Interactive Destinations Map
 - Visual exploration of popular Indian destinations
-- Uttarakhand, Himachal Pradesh, Rajasthan, Kashmir, and more
+- Uttarakhand, Himachal Pradesh, Rajasthan, Kashmir, Goa, Kerala, and more
 - Click-to-explore destination details
+- Major cities: Delhi, Mumbai, Kolkata, Chennai, Bangalore, Jaipur, Agra, Varanasi
 
 ### 🚗 Transport Operating System
 - **Bus Booking** - Comfortable coaches for group travel
-- **Cab Services** - Private and shared taxi options
+- **Cab Services** - Private and shared taxi options from Delhi to hill stations
 - **Helicopter Services** - Premium aerial transport to remote locations
 
 ### 🏨 Stays & Experiences
 - Curated accommodation recommendations
 - Activity and experience bookings
 - Integration with local experiences
+- Homestays, hotels, resorts across India
 
 ### 📋 Multi-Step Itinerary Builder
 - Drag-and-drop trip planning
 - Day-by-day itinerary creation
 - Budget calculator
 - Shareable trip plans
+- Custom packages for spiritual, adventure, family trips
 
 ## 🎨 Design System
 

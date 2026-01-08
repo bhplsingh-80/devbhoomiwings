@@ -15,14 +15,14 @@ export function TermsPage() {
           
           <div className="prose max-w-none space-y-6 text-[#64748b]">
             <p><strong>Last Updated:</strong> December 26, 2024</p>
-            <p><strong>Company:</strong> Devbhoomi Wings Private Limited</p>
+            <p><strong>Company:</strong> DEVBHOOMI TRAVELMOUR WINGS INDIA PRIVATE LIMITED</p>
             <p><strong>Registered Office:</strong> Shop no. 208, Ganga complex</p>
             <p><strong>Authorised by:</strong> Government of India</p>
             
             <section>
               <h2 className="text-2xl font-semibold text-[#0f172a] mb-3">1. Acceptance of Terms</h2>
               <p>
-                By accessing and using the services of Devbhoomi Wings Pvt Ltd, you accept and agree to be bound by these Terms of Service. 
+                By accessing and using the services of DEVBHOOMI TRAVELMOUR WINGS INDIA PRIVATE LIMITED, you accept and agree to be bound by these Terms of Service. 
                 If you do not agree to these terms, please do not use our services.
               </p>
             </section>
