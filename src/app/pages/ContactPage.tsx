@@ -7,7 +7,7 @@ export function ContactPage() {
   const viewDetailsWhatsApp = '9311344462'; // +91 93113 44462
   const cabBookingWhatsApp = '9311344461'; // +91 93113 44461
   const techSupportPhone = '6395734224';
-  const randomWhatsApp = '9690707002';
+  const randomWhatsApp = '';
 
   return (
     <div className="min-h-screen bg-[#fafaf9]">
@@ -24,7 +24,7 @@ export function ContactPage() {
                   <Phone className="w-6 h-6 text-[#14b8a6] mt-1" />
                   <div>
                     <h3 className="font-semibold mb-2">Call Us</h3>
-                    <p className="text-[#64748b]">9690707002</p>
+                    <p className="text-[#64748b]">N/A</p>
                     <p className="text-[#64748b]">View Details: +91 {viewDetailsWhatsApp}</p>
                     <p className="text-[#64748b]">Cab Booking: +91 {cabBookingWhatsApp}</p>
                     <p className="text-[#64748b]">Tech Support: +91 {techSupportPhone}</p>
@@ -60,10 +60,11 @@ export function ContactPage() {
                     <h3 className="font-semibold text-white mb-2">WhatsApp</h3>
                     <p className="text-white/90 mb-3">Get instant support on WhatsApp</p>
                     <a
-                      href={`https://wa.me/91${randomWhatsApp}`}
+                      href={randomWhatsApp ? `https://wa.me/91${randomWhatsApp}` : '#'}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 bg-white text-[#14b8a6] rounded-lg hover:shadow-lg transition"
+                      aria-disabled={!randomWhatsApp}
                     >
                       <MessageCircle className="w-4 h-4" />
                       Chat on WhatsApp

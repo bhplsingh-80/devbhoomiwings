@@ -6,7 +6,6 @@ import { DestinationsMap } from '../components/DestinationsMap';
 import { TransportOS } from '../components/TransportOS';
 import { StaysExperiences } from '../components/StaysExperiences';
 import { ItineraryBuilder } from '../components/ItineraryBuilder';
-import { ReviewsSection } from '../components/ReviewsSection';
 import { Footer } from '../components/Footer';
 import { NewsTicker } from '../components/NewsTicker';
 import { SEO, SchemaMarkup } from '../components/SEO';
@@ -29,12 +28,7 @@ export function HomePage() {
       "addressLocality": "Pithoragarh"
     },
     "priceRange": "₹5000-₹50000",
-    "areaServed": ["Pithoragarh", "Kashmir", "Uttarakhand", "Himachal Pradesh"],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "150"
-    }
+    "areaServed": ["Pithoragarh", "Kashmir", "Uttarakhand", "Himachal Pradesh"]
   };
 
   return (
@@ -109,8 +103,7 @@ export function HomePage() {
               <ItineraryBuilder />
             </div>
             
-            {/* Reviews Section */}
-            <ReviewsSection />
+            {/* Reviews Section removed (fake) */}
           </main>
           
           {/* Footer */}
