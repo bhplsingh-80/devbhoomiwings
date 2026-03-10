@@ -35,7 +35,7 @@ export function AboutPage() {
               <strong>Office Address:</strong> 16b/S-208, Ganga Complex, UGF, Sec-16, Vasundhara, Ghaziabad<br />
               <strong>Contact:</strong> View Details: +91 9311344462, Cab Booking: +91 9311344461, Tech Support: +91 6395734224, Director: +91 9311344463<br />
               <strong>Email:</strong> Admin: info@devbhoomiwings.com, Support: bhupalsingh@devbhoomiwings.com<br />
-              <strong>Director:</strong> Bhupal Singh - +91 9311344463<br />
+              <strong>Director:</strong> Bhupal Singh - +91 9311344461<br />
               <strong>Instagram:</strong> @devbhoomiwings<br />
               <strong>CIN:</strong> U79110UT2025PTC020432
             </p>

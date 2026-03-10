@@ -2,5 +2,8 @@
   "buildCommand": "npm ci && npx vite build",
   "installCommand": "npm ci",
   "framework": "vite",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }

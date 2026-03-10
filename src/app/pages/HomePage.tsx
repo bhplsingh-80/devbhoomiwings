@@ -10,6 +10,7 @@ import { Footer } from '../components/Footer';
 import { NewsTicker } from '../components/NewsTicker';
 import { SEO, SchemaMarkup } from '../components/SEO';
 import { Button } from '../components/ui/button';
+import { LegitimacySection } from '../components/LegitimacySection';
 
 export function HomePage() {
   const schemaData = {
@@ -104,6 +105,9 @@ export function HomePage() {
             </div>
             
             {/* Reviews Section removed (fake) */}
+            
+            {/* Legitimacy / Certificates section added */}
+            <LegitimacySection />
           </main>
           
           {/* Footer */}

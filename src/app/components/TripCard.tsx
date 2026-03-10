@@ -1,15 +1,12 @@
-import { Star, Calendar, Users, TrendingUp, MapPin } from 'lucide-react';
+import { Calendar, Users, TrendingUp, MapPin } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { Link } from 'react-router-dom';
 
 interface TripCardProps {
   title: string;
   image: string;
-  rating: number;
-  reviews: number;
   duration: string;
   price: string;
   tags: string[];
@@ -21,8 +18,6 @@ interface TripCardProps {
 export function TripCard({
   title,
   image,
-  rating,
-  reviews,
   duration,
   price,
   tags,
@@ -62,16 +57,9 @@ export function TripCard({
 
       {/* Content */}
       <div className="p-5 space-y-4">
-        {/* Title & Rating */}
+        {/* Title */}
         <div>
           <h3 className="font-semibold text-[#0f172a] mb-2 line-clamp-1">{title}</h3>
-          <div className="flex items-center gap-2">
-            <div className="flex items-center gap-1">
-              <Star className="h-4 w-4 fill-[#f59e0b] text-[#f59e0b]" />
-              <span className="text-sm font-semibold">{rating}</span>
-            </div>
-            <span className="text-xs text-slate-500">({reviews} reviews)</span>
-          </div>
         </div>
 
         {/* Tags */}
@@ -108,14 +96,17 @@ export function TripCard({
         </div>
 
         {/* Action Button */}
-        <Link
-          to={`/packages`}
-          className="w-full"
+        <Button
+          onClick={() => {
+            const phoneNumber = '+919311344461';
+            const message = `Hi! I'm interested in the ${title} package. Can you provide more details?`;
+            const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\s+/g, '')}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+          }}
+          className="w-full bg-[#14b8a6] hover:bg-[#14b8a6]/90"
         >
-          <Button className="w-full bg-[#14b8a6] hover:bg-[#14b8a6]/90">
-            View Details
-          </Button>
-        </Link>
+          View Details
+        </Button>
       </div>
     </Card>
   );

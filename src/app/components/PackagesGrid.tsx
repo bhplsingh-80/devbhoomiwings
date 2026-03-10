@@ -4,8 +4,6 @@ const packages = [
   {
     title: 'Char Dham Circuit',
     image: 'https://images.unsplash.com/photo-1649147313351-c86537fda0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxrZWRhcm5hdGglMjB0ZW1wbGV8ZW58MXx8fHwxNzY2NTk4NDgyfDA&ixlib=rb-4.1.0&q=80&w=1080',
-    rating: 4.9,
-    reviews: 328,
     duration: '10-12 Days',
     price: '₹45,000',
     tags: ['Spiritual', 'Family-friendly', 'Guided'],
@@ -21,8 +19,6 @@ const packages = [
   {
     title: 'Nainital – Corbett – Mussoorie Classic',
     image: 'https://images.unsplash.com/photo-1634804246495-0b77a9e9834f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdXNzb29yaWUlMjBoaWxsc3xlbnwxfHx8fDE3NjY1OTg0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    rating: 4.7,
-    reviews: 452,
     duration: '5-7 Days',
     price: '₹28,000',
     tags: ['Family', 'Wildlife', 'Scenic'],
@@ -37,8 +33,6 @@ const packages = [
   {
     title: 'Auli Snow & Chopta',
     image: 'https://images.unsplash.com/photo-1605199024013-5954321963dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbm93JTIwbW91bnRhaW5zJTIwc2tpaW5nfGVufDF8fHx8MTc2NjU5ODQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    rating: 4.8,
-    reviews: 267,
     duration: '4-6 Days',
     price: '₹32,000',
     tags: ['Adventure', 'Snow', 'Trek'],
@@ -53,8 +47,6 @@ const packages = [
   {
     title: 'Pithoragarh Explorer',
     image: 'https://images.unsplash.com/photo-1692272579704-786c80392913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMHZhbGxleSUyMHRyZWt8ZW58MXx8fHwxNzY2NTk4NDg0fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    rating: 4.6,
-    reviews: 143,
     duration: '7-9 Days',
     price: '₹38,000',
     tags: ['Remote', 'Trek', 'Cultural'],
@@ -70,8 +62,6 @@ const packages = [
   {
     title: 'Adi Kailash Spiritual Circuit',
     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
-    rating: 4.8,
-    reviews: 221,
     duration: '9-11 Days',
     price: '₹48,000',
     tags: ['Spiritual', 'Trek', 'Scenic'],
@@ -87,8 +77,6 @@ const packages = [
   {
     title: 'Gunji Mountain Experience',
     image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
-    rating: 4.7,
-    reviews: 98,
     duration: '6-8 Days',
     price: '₹36,000',
     tags: ['Trek', 'Remote', 'Adventure'],
@@ -103,8 +91,6 @@ const packages = [
   {
     title: 'Rishikesh Adventure Weekend',
     image: 'https://images.unsplash.com/photo-1715230656262-9410dfbead2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaXNoaWtlc2glMjByYWZ0aW5nJTIwYWR2ZW50dXJlfGVufDF8fHx8MTc2NjU5ODQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080',
-    rating: 4.9,
-    reviews: 589,
     duration: '2-3 Days',
     price: '₹12,000',
     tags: ['Weekend', 'Adventure', 'Yoga'],
@@ -119,8 +105,6 @@ const packages = [
   {
     title: 'Custom Corporate Offsite – NCR to Devbhoomi',
     image: 'https://images.unsplash.com/photo-1632980277341-3c502ccd1d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoaW1hbGF5YSUyMG1vdW50YWlucyUyMGxha2V8ZW58MXx8fHwxNzY2NTk4NDgyfDA&ixlib=rb-4.1.0&q=80&w=1080',
-    rating: 4.7,
-    reviews: 234,
     duration: '3-5 Days',
     price: '₹25,000',
     tags: ['Corporate', 'Team Building', 'Luxury'],
@@ -135,8 +119,6 @@ const packages = [
   {
     title: 'Golden Triangle Delhi-Agra-Jaipur',
     image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YWolMjBtYWhhbHxlbnwxfHx8fDE3NjY1OTg0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    rating: 4.8,
-    reviews: 567,
     duration: '6-8 Days',
     price: '₹35,000',
     tags: ['Heritage', 'Culture', 'Iconic'],

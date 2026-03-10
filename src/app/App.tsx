@@ -17,7 +17,9 @@ const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ defaul
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage').then(m => ({ default: m.PrivacyPolicyPage })));
 const CookiePolicyPage = lazy(() => import('./pages/CookiePolicyPage').then(m => ({ default: m.CookiePolicyPage })));
 const TermsPage = lazy(() => import('./pages/TermsPage').then(m => ({ default: m.TermsPage })));
-const BookCabsPage = lazy(() => import('./pages/BookCabsPage').then(m => ({ default: m.default })));
+const BookCabsPage = lazy(() => import('./pages/BookCabsPage'));
+const SpecialOffersPage = lazy(() => import('./pages/SpecialOffersPage').then(m => ({ default: m.SpecialOffersPage })));
+const ItineraryBuilderPage = lazy(() => import('./pages/ItineraryBuilderPage').then(m => ({ default: m.ItineraryBuilderPage })));
 
 // Loading component
 const PageLoader = () => (
@@ -55,6 +57,8 @@ export default function App() {
           <Route path="/cookie-policy" element={<CookiePolicyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/book-cabs" element={<BookCabsPage />} />
+          <Route path="/special-offers" element={<SpecialOffersPage />} />
+          <Route path="/itinerary-builder" element={<ItineraryBuilderPage />} />
         </Routes>
       </Suspense>
       <CookieConsent />

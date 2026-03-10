@@ -1,4 +1,4 @@
-import { Wifi, Star, Heart, Tent, Home, Building2 } from 'lucide-react';
+import { Wifi, Heart, Tent, Home, Building2 } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
@@ -11,7 +11,6 @@ const stays = [
     location: 'Munsiyari',
     image: 'https://images.unsplash.com/photo-1631773870335-a1811956c99b?w=600',
     price: '₹2,500',
-    rating: 4.8,
     amenities: ['Valley View', 'Local Cuisine', 'Wi-Fi'],
     hasWifi: true,
   },
@@ -21,7 +20,6 @@ const stays = [
     location: 'Rishikesh',
     image: 'https://images.unsplash.com/photo-1653379714531-47f3f491c509?w=600',
     price: '₹1,800',
-    rating: 4.6,
     amenities: ['Bonfire', 'Rafting Access', 'Meals Included'],
     hasWifi: false,
   },
@@ -31,7 +29,6 @@ const stays = [
     location: 'Mussoorie',
     image: 'https://images.unsplash.com/photo-1634804246495-0b77a9e9834f?w=600',
     price: '₹4,500',
-    rating: 4.7,
     amenities: ['City Center', 'Restaurant', 'Wi-Fi'],
     hasWifi: true,
   },
@@ -41,7 +38,6 @@ const stays = [
     location: 'Nainital',
     image: 'https://images.unsplash.com/photo-1632980277341-3c502ccd1d12?w=600',
     price: '₹3,200',
-    rating: 4.9,
     amenities: ['High-Speed Wi-Fi', 'Work Desk', 'Mountain View'],
     hasWifi: true,
   },
@@ -129,11 +125,6 @@ export function StaysExperiences() {
                       </h3>
                       <div className="text-xs text-slate-500">{stay.location}</div>
                     </div>
-                  </div>
-
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-[#f59e0b] text-[#f59e0b]" />
-                    <span className="text-sm font-semibold">{stay.rating}</span>
                   </div>
 
                   <div className="flex flex-wrap gap-1.5">

@@ -2,12 +2,12 @@ import { useEffect, useState, memo } from 'react';
 import { Bell, X } from 'lucide-react';
 
 const announcements = [
-  "🎉 Special New Year Offer Contact US now - 9690707002 ",
-  "🏔️ New trekking routes added to Kedarnath and Badrinath",
+  "Special offer: 20% off on all Adi Kailash Yatra packages until June 30th!",
+  "Goa special trip: 27k per person for 3 nights/4 days, book now!",
   "🚗 Cab bookings now available 24/7",
-  "⭐ 500+ happy travelers this season",
+  "⭐ Government-approved tour packages for safe travel",
   "📞 24/7 customer support available",
-  "🌟 Featured: Char Dham Yatra packages starting from ₹15,000"
+  "🌟 Featured: Special deals for limited time"
 ];
 
 export const NewsTicker = memo(function NewsTicker() {

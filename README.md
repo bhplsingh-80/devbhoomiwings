@@ -84,7 +84,7 @@ Devbhoomi Wings is a premium travel operating system designed for NCR and Indian
 - [9311344463](tel:9311344463)
 
 ### WhatsApp
-[+91 9311344462](https://wa.me/919311344462)
+[+91 9311344462](https://wa.me/919311344461)
 
 ### Email
 [bhupalsingh@devbhoomiwings.com](mailto:bhupalsingh@devbhoomiwings.com)
