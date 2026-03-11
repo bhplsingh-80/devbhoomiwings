@@ -1,18 +1,7 @@
-import { Calendar, Users, TrendingUp, Cloud } from 'lucide-react';
 import { Button } from './ui/button';
-import { Card } from './ui/card';
 import { Link } from 'react-router-dom';
 
 const heroImage = "https://images.unsplash.com/photo-1632980277341-3c502ccd1d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoaW1hbGF5YSUyMG1vdW50YWlucyUyMGxha2V8ZW58MXx8fHwxNzY2NTk4NDgyfDA&ixlib=rb-4.1.0&q=80&w=1080";
-
-const progressSteps = [
-  { label: 'Plan', active: true },
-  { label: 'Travel', active: false },
-  { label: 'Stay', active: false },
-  { label: 'Explore', active: false },
-  { label: 'Return', active: false },
-];
-
 
 export function HeroSection() {
   return (
@@ -74,79 +63,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Trip Summary Card */}
-          <div className="lg:col-span-5">
-            <Card className="p-6 space-y-6 bg-white/95 backdrop-blur border-0 shadow-2xl">
-              <div className="flex items-center justify-between">
-                <h3 className="font-semibold text-[#0f172a]">Trip Summary</h3>
-                <Cloud className="h-5 w-5 text-[#14b8a6]" />
-              </div>
 
-              {/* Date Range */}
-              <div className="space-y-2">
-                <label className="text-sm text-slate-600">Travel Dates</label>
-                <div className="flex items-center gap-2 p-3 rounded-lg bg-slate-50 border border-slate-200">
-                  <Calendar className="h-4 w-4 text-[#14b8a6]" />
-                  <span className="text-sm">Select dates</span>
-                </div>
-              </div>
-
-              {/* Travelers */}
-              <div className="space-y-2">
-                <label className="text-sm text-slate-600">Travelers</label>
-                <div className="flex items-center gap-2 p-3 rounded-lg bg-slate-50 border border-slate-200">
-                  <Users className="h-4 w-4 text-[#14b8a6]" />
-                  <span className="text-sm">2 Adults, 1 Child</span>
-                </div>
-              </div>
-
-              {/* Budget Meter */}
-              <div className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <label className="text-sm text-slate-600">Budget</label>
-                  <span className="text-sm font-semibold text-[#f59e0b]">₹25,000</span>
-                </div>
-                <div className="h-2 bg-slate-200 rounded-full overflow-hidden">
-                  <div className="h-full w-1/2 bg-gradient-to-r from-[#14b8a6] to-[#f59e0b]" />
-                </div>
-              </div>
-
-              {/* Weather Snippet */}
-              <div className="p-3 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 border border-blue-100">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-xs text-slate-600">Current in Nainital</div>
-                    <div className="font-semibold">18°C, Clear</div>
-                  </div>
-                  <Cloud className="h-8 w-8 text-blue-500" />
-                </div>
-              </div>
-
-              {/* Progress Indicator */}
-              <div className="space-y-3 pt-4 border-t border-slate-200">
-                <div className="flex items-center gap-2 text-sm text-slate-600">
-                  <TrendingUp className="h-4 w-4" />
-                  <span>Journey Progress</span>
-                </div>
-                {progressSteps.map((step, index) => (
-                  <div key={step.label} className="flex items-center gap-3">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-semibold ${
-                      step.active 
-                        ? 'bg-[#14b8a6] text-white' 
-                        : 'bg-slate-100 text-slate-400'
-                    }`}>
-                      {index + 1}
-                    </div>
-                    <div className={`flex-1 ${
-                      step.active ? 'text-[#0f172a] font-semibold' : 'text-slate-400'
-                    }`}>
-                      {step.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Card>
-          </div>
         </div>
       </div>
 
