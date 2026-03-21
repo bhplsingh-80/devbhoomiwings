@@ -20,6 +20,7 @@ const navItems = [
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { user, handleSignOut } = useAuth();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
@@ -58,6 +59,8 @@ export function Header() {
               size="sm"
               className="lg:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-expanded={mobileMenuOpen}
+              aria-label="Toggle navigation"
             >
               {mobileMenuOpen ? (
                 <X className="h-5 w-5" />
@@ -68,42 +71,47 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Overlay */}
         {mobileMenuOpen && (
-          <nav className="lg:hidden border-t border-slate-200 py-4">
-            <div className="flex flex-col gap-3">
-              {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className="text-sm text-[#0f172a] hover:text-[#14b8a6] transition-colors py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
-              {user ? (
-                <>
-                  <Link
-                    to="/dashboard"
-                    className="text-sm text-[#0f172a] hover:text-[#14b8a6] transition-colors py-2"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Dashboard
-                  </Link>
-                  <button
-                    onClick={() => {
-                      handleSignOut();
-                      setMobileMenuOpen(false);
-                    }}
-                    className="text-sm text-[#0f172a] hover:text-[#14b8a6] transition-colors py-2 text-left"
-                  >
-                    Sign Out
-                  </button>
-                </>
-              ) : null}
-            </div>
-          </nav>
+          <div className="fixed inset-0 z-40 lg:hidden">
+            <div className="absolute inset-0 bg-black/50" onClick={() => setMobileMenuOpen(false)} />
+            <nav className="absolute top-16 left-0 right-0 bg-white border-t border-slate-200 py-4 shadow-lg">
+              <div className="container mx-auto px-4">
+                <div className="flex flex-col gap-3">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      className="text-sm text-[#0f172a] hover:text-[#14b8a6] transition-colors py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                  {user ? (
+                    <>
+                      <Link
+                        to="/dashboard"
+                        className="text-sm text-[#0f172a] hover:text-[#14b8a6] transition-colors py-2"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        Dashboard
+                      </Link>
+                      <button
+                        onClick={() => {
+                          handleSignOut();
+                          setMobileMenuOpen(false);
+                        }}
+                        className="text-sm text-[#0f172a] hover:text-[#14b8a6] transition-colors py-2 text-left"
+                      >
+                        Sign Out
+                      </button>
+                    </>
+                  ) : null}
+                </div>
+              </div>
+            </nav>
+          </div>
         )}
       </div>
     </header>
