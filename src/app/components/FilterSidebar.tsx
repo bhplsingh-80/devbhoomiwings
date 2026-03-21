@@ -128,7 +128,7 @@ export function FilterSidebar() {
 
   if (isCollapsed) {
     return (
-      <div className="fixed left-0 top-20 z-40 bg-white border-r border-slate-200 rounded-r-lg shadow-lg">
+      <div className="fixed left-0 top-20 z-40 bg-white border-r border-slate-200 rounded-r-lg shadow-lg hidden lg:block">
         <Button
           variant="ghost"
           size="sm"
@@ -142,7 +142,7 @@ export function FilterSidebar() {
   }
 
   return (
-    <aside className="fixed left-0 top-20 z-40 w-72 h-[calc(100vh-5rem)] bg-white border-r border-slate-200 overflow-y-auto">
+    <aside className="fixed left-0 top-20 z-40 w-72 h-[calc(100vh-5rem)] bg-white border-r border-slate-200 overflow-y-auto hidden lg:block">
       <div className="p-6 space-y-6">
         {/* Collapse Button */}
         <div className="flex items-center justify-between">

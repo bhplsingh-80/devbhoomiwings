@@ -10,6 +10,7 @@ import { Footer } from '../components/Footer';
 import { NewsTicker } from '../components/NewsTicker';
 import { SEO, SchemaMarkup } from '../components/SEO';
 import { Button } from '../components/ui/button';
+import { LegitimacySection } from '../components/LegitimacySection';
 
 export function HomePage() {
   const schemaData = {
@@ -100,8 +101,13 @@ export function HomePage() {
             
             {/* Real Itinerary Builder */}
             <div id="itinerary-builder">
-              <ItineraryBuilder />
+              <ItineraryBuilder hideTripSummary={true} />
             </div>
+            
+            {/* Reviews Section removed (fake) */}
+            
+            {/* Legitimacy / Certificates section added */}
+            <LegitimacySection />
           </main>
           
           {/* Footer */}

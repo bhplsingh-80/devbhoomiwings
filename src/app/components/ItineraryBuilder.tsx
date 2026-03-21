@@ -27,7 +27,15 @@ const addOns = [
   { name: 'Photo/Video Package', price: '₹3,500', icon: MapPin },
 ];
 
-export function ItineraryBuilder() {
+interface ItineraryBuilderProps {
+  /**
+   * When true the final step won’t show the cost breakdown – useful
+   * for embedding a simplified builder on the landing page.
+   */
+  hideTripSummary?: boolean;
+}
+
+export function ItineraryBuilder({ hideTripSummary = false }: ItineraryBuilderProps) {
   const [currentStep, setCurrentStep] = useState(1);
   const [budget, setBudget] = useState([30000]);
 
@@ -263,33 +271,35 @@ export function ItineraryBuilder() {
             <div className="space-y-6">
               <h3 className="text-xl font-semibold text-[#0f172a]">Review & Payment</h3>
               
-              <Card className="p-6 bg-slate-50">
-                <h4 className="font-medium mb-4">Trip Summary</h4>
-                <div className="space-y-2 text-sm mb-4">
-                  <div className="flex justify-between">
-                    <span className="text-slate-600">Destinations (7 days)</span>
-                    <span className="font-medium">₹25,000</span>
+              {!hideTripSummary && (
+                <Card className="p-6 bg-slate-50">
+                  <h4 className="font-medium mb-4">Trip Summary</h4>
+                  <div className="space-y-2 text-sm mb-4">
+                    <div className="flex justify-between">
+                      <span className="text-slate-600">Destinations (7 days)</span>
+                      <span className="font-medium">₹25,000</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-600">Transport</span>
+                      <span className="font-medium">₹8,000</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-600">Accommodation</span>
+                      <span className="font-medium">₹12,000</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-600">Add-ons</span>
+                      <span className="font-medium">₹4,000</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-600">Transport</span>
-                    <span className="font-medium">₹8,000</span>
+                  <div className="pt-4 border-t border-slate-200">
+                    <div className="flex justify-between items-center">
+                      <span className="font-semibold">Total Amount</span>
+                      <span className="text-2xl font-bold text-[#14b8a6]">₹49,000</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-600">Accommodation</span>
-                    <span className="font-medium">₹12,000</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-600">Add-ons</span>
-                    <span className="font-medium">₹4,000</span>
-                  </div>
-                </div>
-                <div className="pt-4 border-t border-slate-200">
-                  <div className="flex justify-between items-center">
-                    <span className="font-semibold">Total Amount</span>
-                    <span className="text-2xl font-bold text-[#14b8a6]">₹49,000</span>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              )}
             </div>
           )}
 
