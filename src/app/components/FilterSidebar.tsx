@@ -57,7 +57,7 @@ export function FilterSidebar() {
       // If we have files or API is preferred, use FormData
       if (attachedFiles.length > 0) {
         const formData = new FormData();
-        formData.append('to', 'bhupalsingh@devbhoomiwings.com');
+        formData.append('to', 'info@devbhoomiwings.com');
         formData.append('replyTo', email);
         formData.append('subject', subject || 'Query from Devbhoomi Wings');
         formData.append('name', name);
@@ -87,7 +87,7 @@ export function FilterSidebar() {
         }
       } else {
         // Fallback to original behavior when no files
-        const mailtoLink = `mailto:bhupalsingh@devbhoomiwings.com?subject=${encodeURIComponent(subject || 'Query from Devbhoomi Wings')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        const mailtoLink = `mailto:info@devbhoomiwings.com?subject=${encodeURIComponent(subject || 'Query from Devbhoomi Wings')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
         
         // Open default email client
         window.location.href = mailtoLink;
@@ -98,7 +98,7 @@ export function FilterSidebar() {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              to: 'bhupalsingh@devbhoomiwings.com',
+              to: 'info@devbhoomiwings.com',
               replyTo: email,
               subject: subject || 'Query from Devbhoomi Wings',
               name,
@@ -276,7 +276,7 @@ export function FilterSidebar() {
           <div className="pt-4 border-t border-slate-200">
             <p className="text-xs text-[#64748b] text-center">
               Direct Email:<br />
-              <span className="font-semibold text-[#0f172a]">bhupalsingh@devbhoomiwings.com</span>
+              <span className="font-semibold text-[#0f172a]">info@devbhoomiwings.com</span>
             </p>
           </div>
         </form>

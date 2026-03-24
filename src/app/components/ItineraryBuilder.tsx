@@ -35,9 +35,27 @@ interface ItineraryBuilderProps {
   hideTripSummary?: boolean;
 }
 
+const monthNames = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+
+const getUpcomingMonths = (count = 6) => {
+  const options: string[] = [];
+  const now = new Date();
+  for (let i = 0; i < count; i += 1) {
+    const date = new Date(now.getFullYear(), now.getMonth() + i, 1);
+    options.push(`${monthNames[date.getMonth()]} ${date.getFullYear()}`);
+  }
+  return options;
+};
+
 export function ItineraryBuilder({ hideTripSummary = false }: ItineraryBuilderProps) {
   const [currentStep, setCurrentStep] = useState(1);
   const [budget, setBudget] = useState([30000]);
+  const [travelMonth, setTravelMonth] = useState(getUpcomingMonths(4)[0]);
+
+  const travelMonthOptions = getUpcomingMonths(8);
 
   const isStepComplete = (stepId: number) => stepId < currentStep;
   const isStepActive = (stepId: number) => stepId === currentStep;
@@ -122,11 +140,16 @@ export function ItineraryBuilder({ hideTripSummary = false }: ItineraryBuilderPr
                     <Calendar className="h-4 w-4 text-[#14b8a6]" />
                     Travel Month
                   </label>
-                  <select className="w-full p-3 border border-slate-200 rounded-lg outline-none">
-                    <option>March 2025</option>
-                    <option>April 2025</option>
-                    <option>May 2025</option>
-                    <option>June 2025</option>
+                  <select
+                    value={travelMonth}
+                    onChange={(event) => setTravelMonth(event.currentTarget.value)}
+                    className="w-full p-3 border border-slate-200 rounded-lg outline-none"
+                  >
+                    {travelMonthOptions.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
                   </select>
                 </div>
               </div>
@@ -270,6 +293,7 @@ export function ItineraryBuilder({ hideTripSummary = false }: ItineraryBuilderPr
           {currentStep === 5 && (
             <div className="space-y-6">
               <h3 className="text-xl font-semibold text-[#0f172a]">Review & Payment</h3>
+              <p className="text-sm text-slate-600">Planned travel month: <strong>{travelMonth}</strong></p>
               
               {!hideTripSummary && (
                 <Card className="p-6 bg-slate-50">
