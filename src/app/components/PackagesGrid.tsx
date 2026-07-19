@@ -62,8 +62,8 @@ const packages = [
   {
     title: 'Adi Kailash Spiritual Circuit',
     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
-    duration: '9-11 Days',
-    price: '₹48,000',
+    duration: '4 Days 5 Nights',
+    price: '₹25,000',
     tags: ['Spiritual', 'Trek', 'Scenic'],
     itinerary: [
       'Munsiyari - Gateway to Johar Valley',

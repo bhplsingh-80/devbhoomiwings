@@ -4,8 +4,8 @@ import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { Card } from '../components/ui/card';
 
 export function ContactPage() {
-  const viewDetailsWhatsApp = '9311344462'; // +91 93113 44462
-  const cabBookingWhatsApp = '9311344461'; // +91 93113 44461
+  const viewDetailsWhatsApp = '9690707002'; // +91 96907 07002
+  const cabBookingWhatsApp = '9690707002'; // +91 96907 07002
   const techSupportPhone = '6395734224';
   const randomWhatsApp = '';
 
@@ -37,8 +37,7 @@ export function ContactPage() {
                   <Mail className="w-6 h-6 text-[#14b8a6] mt-1" />
                   <div>
                     <h3 className="font-semibold mb-2">Email Us</h3>
-                    <p className="text-[#64748b]">Admin: info@devbhoomiwings.com</p>
-                    <p className="text-[#64748b]">Support: bhupalsingh@devbhoomiwings.com</p>
+                    <p className="text-[#64748b]">Admin: <a href="mailto:sales@devbhoomiwings.com" className="text-[#64748b] hover:text-[#0f172a] underline">sales@devbhoomiwings.com</a><span className="mx-2">|</span> Support: <a href="mailto:bhupalsingh@devbhoomiwings.com" className="text-[#64748b] hover:text-[#0f172a] underline">bhupalsingh@devbhoomiwings.com</a></p>
                   </div>
                 </div>
               </Card>

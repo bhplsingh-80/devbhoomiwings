@@ -73,7 +73,7 @@ export function PrivacyPolicyPage() {
               <h2 className="text-2xl font-semibold text-[#0f172a] mb-3">6. Contact Us</h2>
               <p>
                 For privacy-related questions or requests, contact us at:<br />
-                <strong>Email:</strong> Admin: info@devbhoomiwings.com, Support: bhupalsingh@devbhoomiwings.com<br />
+                <strong>Email:</strong> Admin: sales@devbhoomiwings.com, Support: bhupalsingh@devbhoomiwings.com<br />
                 <strong>Phone:</strong> +91 6395734224
               </p>
             </section>

@@ -98,7 +98,7 @@ export function TripCard({
         {/* Action Button */}
         <Button
           onClick={() => {
-            const phoneNumber = '+919311344461';
+            const phoneNumber = '+919690707002';
             const message = `Hi! I'm interested in the ${title} package. Can you provide more details?`;
             const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\s+/g, '')}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');

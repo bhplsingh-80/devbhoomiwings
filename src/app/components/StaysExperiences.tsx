@@ -142,7 +142,7 @@ export function StaysExperiences() {
                     </div>
                     <Button size="sm" className="bg-[#f59e0b] hover:bg-[#f59e0b]/90">
                       <a
-                        href={`https://wa.me/919311344463?text=Hi, I want to book ${stay.title}`}
+                        href={`https://wa.me/919690707002?text=Hi, I want to book ${stay.title}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block text-center"

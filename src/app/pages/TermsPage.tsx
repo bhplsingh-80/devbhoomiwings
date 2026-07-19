@@ -97,8 +97,8 @@ export function TermsPage() {
               <h2 className="text-2xl font-semibold text-[#0f172a] mb-3">8. Contact Information</h2>
               <p>
                 For any questions regarding these terms:<br />
-                <strong>Email:</strong> Admin: info@devbhoomiwings.com, Support: bhupalsingh@devbhoomiwings.com<br />
-                <strong>Phone:</strong> Director: +91 93113 44463, Cab Booking: +91 93113 44463, Tech Support: +91 6395734224<br />
+                <strong>Email:</strong> Admin: sales@devbhoomiwings.com, Support: bhupalsingh@devbhoomiwings.com<br />
+                <strong>Phone:</strong> Director: +91 93113 44461, Cab Booking: +91 93113 44462, Tech Support: +91 6395734224<br />
                 <strong>Address:</strong> Shop no 8 ganga complex Vasundhra ghaziabad
               </p>
             </section>

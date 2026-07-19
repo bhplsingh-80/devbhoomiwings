@@ -20,8 +20,8 @@ export function HomePage() {
     "url": "https://devbhoomiwings.com",
     "logo": "/devbhoomi.png",
     "description": "Affordable travel packages for Pithoragarh, Kashmir, and North India",
-    "telephone": "+91 93113 44461",
-    "email": "info@devbhoomiwings.com",
+    "telephone": "+91 93113 44461, +91 93113 44462",
+    "email": "sales@devbhoomiwings.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "India",

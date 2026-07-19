@@ -128,10 +128,13 @@ export function ItineraryBuilder({ hideTripSummary = false }: ItineraryBuilderPr
                     Number of Travelers
                   </label>
                   <select className="w-full p-3 border border-slate-200 rounded-lg outline-none">
-                    <option>2 Adults</option>
-                    <option>2 Adults, 1 Child</option>
-                    <option>4 Adults</option>
-                    <option>Group (5+)</option>
+                    <option value="1_adult">1 Adult</option>
+                    <option value="1_adult_1_child">1 Adult, 1 Child</option>
+                    <option value="2_adults">2 Adults</option>
+                    <option value="3_adults">3 Adults</option>
+                    <option value="4_adults">4 Adults</option>
+                    <option value="family_2a_2c">Family (2 Adults, 2 Children)</option>
+                    <option value="group_5_plus">Group (5+)</option>
                   </select>
                 </div>
 
@@ -344,7 +347,7 @@ export function ItineraryBuilder({ hideTripSummary = false }: ItineraryBuilderPr
                   const message = encodeURIComponent(
                     `Hi Devbhoomi Wings! I'm interested in booking a custom itinerary.\n\nTrip Details:\n- Budget: ₹${budget[0].toLocaleString()}\n- Duration: 7 days\n- Destinations: Pithoragarh area\n- Transport: AC Bus + Local Cab\n- Accommodation: Homestays\n\nPlease help me finalize this booking.`
                   );
-                  window.open(`https://wa.me/919311344463?text=${message}`, '_blank');
+                  window.open(`https://wa.me/919690707002?text=${message}`, '_blank');
                 } else {
                   setCurrentStep(Math.min(5, currentStep + 1));
                 }

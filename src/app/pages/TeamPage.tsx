@@ -5,12 +5,6 @@ import { Users, Phone, Mail } from 'lucide-react';
 export function TeamPage() {
   const teamMembers = [
     {
-      name: 'Mr. Shivam Tiwari',
-      role: 'Director',
-      phone: '+91 93113 44463',
-      email: 'director@devbhoomiwings.com'
-    },
-    {
       name: 'Bhupal Singh',
       role: 'CEO & Founder',
       phone: '+91 96907 07002',

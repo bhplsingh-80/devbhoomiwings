@@ -67,7 +67,7 @@ export function CookiePolicyPage() {
               <h2 className="text-2xl font-semibold text-[#0f172a] mb-3">Contact Us</h2>
               <p>
                 If you have questions about our use of cookies, please contact us at:<br />
-                <strong>Email:</strong> Admin: info@devbhoomiwings.com, Support: bhupalsingh@devbhoomiwings.com<br />
+                <strong>Email:</strong> Admin: sales@devbhoomiwings.com, Support: bhupalsingh@devbhoomiwings.com<br />
                 <strong>Phone:</strong> +91 6395734224
               </p>
             </section>

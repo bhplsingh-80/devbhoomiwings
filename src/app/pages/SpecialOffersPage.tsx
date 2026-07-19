@@ -9,6 +9,7 @@ import { Calendar, Users, TrendingUp, MapPin, Phone } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function SpecialOffersPage() {
+  const updatedDate = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
   const udaipurTour = {
     title: 'Udaipur Tour - City of Lakes',
     image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1ZGFpcHVyJTIwcGFsYWNlfGVufDF8fHx8MTc2NjU5ODQ4NXww&ixlib=rb-4.1.0&q=80&w=1080',
@@ -31,21 +32,20 @@ export function SpecialOffersPage() {
   const adiKailashTour = {
     title: 'Adi Kailash Special - Spiritual Journey',
     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
-    duration: '10-12 Days',
+    duration: '4 Days 5 Nights',
     originalPrice: '₹55,000',
-    offerPrice: '₹42,000',
+    offerPrice: '₹25,000',
     tags: ['Spiritual', 'Trek', 'Adventure'],
     itinerary: [
-      'Kathmandu - Starting Point',
-      'Simikot - Last Village',
-      'Adi Kailash Parikrama',
-      'Mana Parvati Lake',
-      'Kailash Darshan',
-      'Return Journey'
+      'Day 1: Arrival at Kathgodam and transfer to base camp',
+      'Day 2: Trek towards Adi Kailash base, acclimatisation',
+      'Day 3: Adi Kailash darshan and Parikrama',
+      'Day 4: Return trek towards trek head and transfer back',
+      'Night stay and departure'
     ],
     intensity: 'High' as const,
-    bestSeason: 'May-Jun, Sep-Oct',
-    highlights: ['Adi Kailash Parikrama', 'Sacred lake visit', 'Tibetan culture', 'Spiritual experience', 'Rare trek route']
+    bestSeason: 'Sep-Nov',
+    highlights: ['Adi Kailash Parikrama', 'Sacred lake visit', 'Tibetan culture', 'Spiritual experience', 'Rare trek route', 'Book before July: 5% early-bird discount']
   };
 
   const delhiToPithoragarhCab = {
@@ -68,7 +68,7 @@ export function SpecialOffersPage() {
   };
 
   const handleWhatsAppContact = () => {
-    const phoneNumber = '+919311344461';
+    const phoneNumber = '+919690707002';
     const message = 'Hi! I\'m interested in your special offers. Can you provide more details?';
     const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\s+/g, '')}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -94,6 +94,7 @@ export function SpecialOffersPage() {
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Limited time exclusive deals on our premium tour packages. Don't miss these amazing opportunities!
           </p>
+          <p className="text-sm text-white/80 mt-2">Offer updated: {updatedDate} — 5% discount and special Adi Kailash offer ₹25,000. Bookings open: Sep–Nov.</p>
         </div>
       </section>
 
@@ -175,7 +176,7 @@ export function SpecialOffersPage() {
               />
               <div className="absolute top-4 right-4">
                 <Badge className="bg-red-500 text-white text-lg px-3 py-1">
-                  SAVE ₹13,000
+                  SAVE ₹30,000
                 </Badge>
               </div>
               <div className="absolute top-4 left-4">
@@ -190,6 +191,7 @@ export function SpecialOffersPage() {
               <div>
                 <h3 className="text-2xl font-bold text-[#0f172a] mb-2">{adiKailashTour.title}</h3>
                 <Badge className="bg-red-100 text-red-700">{adiKailashTour.intensity}</Badge>
+                <div className="text-sm text-slate-600 mt-2">Bookings open: Sep–Nov · Book before July: 5% discount</div>
               </div>
 
               <div className="flex flex-wrap gap-2">
@@ -301,14 +303,14 @@ export function SpecialOffersPage() {
             <p className="text-slate-600 mb-6">
               Contact us now to secure your spot on these exclusive deals. Limited availability!
             </p>
-            <Button
-              onClick={handleWhatsAppContact}
-              size="lg"
-              className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-lg px-8 py-3"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              WhatsApp Us: +91 93113 44461
-            </Button>
+              <Button
+                onClick={handleWhatsAppContact}
+                size="lg"
+                className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-lg px-8 py-3"
+              >
+                <Phone className="h-5 w-5 mr-2" />
+                WhatsApp Us: +91 96907 07002
+              </Button>
           </div>
         </div>
       </div>

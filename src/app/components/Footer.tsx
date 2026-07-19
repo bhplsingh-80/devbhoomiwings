@@ -147,9 +147,6 @@ export function Footer() {
                 <a href="tel:+919311344462" className="text-sm hover:text-[#14b8a6] block">
                   +91 93113 44462
                 </a>
-                <a href="tel:+919311344463" className="text-sm hover:text-[#14b8a6] block">
-                  +91 93113 44463 (Director)
-                </a>
               </div>
             </div>
           </div>
@@ -160,9 +157,15 @@ export function Footer() {
             </div>
             <div>
               <div className="text-xs text-slate-400 mb-1">Email Us</div>
-              <a href="mailto:info@devbhoomiwings.com" className="text-sm hover:text-[#14b8a6] text-left">
-                info@devbhoomiwings.com
-              </a>
+              <div className="flex items-center text-sm text-slate-200">
+                <a href="mailto:sales@devbhoomiwings.com" className="hover:text-[#14b8a6]">
+                  sales@devbhoomiwings.com
+                </a>
+                <span className="mx-3 text-slate-500">|</span>
+                <a href="mailto:bhupalsingh@devbhoomiwings.com" className="hover:text-[#14b8a6]">
+                  bhupalsingh@devbhoomiwings.com
+                </a>
+              </div>
             </div>
           </div>
 
@@ -173,10 +176,10 @@ export function Footer() {
             <div>
               <div className="text-xs text-slate-400 mb-1">WhatsApp</div>
               <div className="space-y-1">
-                <Button 
+                  <Button 
                   size="sm" 
                   className="bg-[#25D366] hover:bg-[#25D366]/90 h-auto py-1 px-3"
-                  onClick={() => window.open('https://wa.me/919311344463', '_blank')}
+                  onClick={() => window.open('https://wa.me/919690707002', '_blank')}
                 >
                   Chat Now
                 </Button>

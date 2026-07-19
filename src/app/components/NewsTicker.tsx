@@ -2,9 +2,9 @@ import { useEffect, useState, memo } from 'react';
 import { Bell, X } from 'lucide-react';
 
 const announcements = [
-  "Special offer: 20% off on all Adi Kailash Yatra packages until June 30th!",
-  "Goa special trip: 27k per person for 3 nights/4 days, book now!",
-  "🚗 Cab bookings now available 24/7",
+  "⛰️ 5% early-bird discount — Special Adi Kailash offer ₹25,000. Bookings open: Sep–Nov",
+  "🌟Contact now ! 9311344461 for bookings and inquiries",
+  "🚗 Cab  bookings now available 24/7",
   "⭐ Government-approved tour packages for safe travel",
   "📞 24/7 customer support available",
   "🌟 Featured: Special deals for limited time"

@@ -26,12 +26,12 @@ export default function BookCabsPage() {
             </ul>
             <div className="flex flex-col md:flex-row gap-4 items-center">
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Delhi to Pithoragarh" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Delhi to Pithoragarh" target="_blank" rel="noopener noreferrer">
                       Book Delhi → Pithoragarh
                     </a>
                   </Button>
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Pithoragarh to Delhi" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Pithoragarh to Delhi" target="_blank" rel="noopener noreferrer">
                       Book Pithoragarh → Delhi
                     </a>
                   </Button>
@@ -49,12 +49,12 @@ export default function BookCabsPage() {
             </ul>
             <div className="flex flex-col md:flex-row gap-4 items-center">
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Delhi to Rishikesh" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Delhi to Rishikesh" target="_blank" rel="noopener noreferrer">
                       Book Delhi → Rishikesh
                     </a>
                   </Button>
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Rishikesh to Delhi" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Rishikesh to Delhi" target="_blank" rel="noopener noreferrer">
                       Book Rishikesh → Delhi
                     </a>
                   </Button>
@@ -72,12 +72,12 @@ export default function BookCabsPage() {
             </ul>
             <div className="flex flex-col md:flex-row gap-4 items-center">
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Delhi to Mussoorie" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Delhi to Mussoorie" target="_blank" rel="noopener noreferrer">
                       Book Delhi → Mussoorie
                     </a>
                   </Button>
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Mussoorie to Delhi" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Mussoorie to Delhi" target="_blank" rel="noopener noreferrer">
                       Book Mussoorie → Delhi
                     </a>
                   </Button>
@@ -95,12 +95,12 @@ export default function BookCabsPage() {
             </ul>
             <div className="flex flex-col md:flex-row gap-4 items-center">
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Delhi to Jim Corbett" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Delhi to Jim Corbett" target="_blank" rel="noopener noreferrer">
                       Book Delhi → Jim Corbett
                     </a>
                   </Button>
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Jim Corbett to Delhi" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Jim Corbett to Delhi" target="_blank" rel="noopener noreferrer">
                       Book Jim Corbett → Delhi
                     </a>
                   </Button>
@@ -118,12 +118,12 @@ export default function BookCabsPage() {
             </ul>
             <div className="flex flex-col md:flex-row gap-4 items-center">
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Delhi to Auli" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Delhi to Auli" target="_blank" rel="noopener noreferrer">
                       Book Delhi → Auli
                     </a>
                   </Button>
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Auli to Delhi" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Auli to Delhi" target="_blank" rel="noopener noreferrer">
                       Book Auli → Delhi
                     </a>
                   </Button>
@@ -141,12 +141,12 @@ export default function BookCabsPage() {
             </ul>
             <div className="flex flex-col md:flex-row gap-4 items-center">
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Delhi to Chopta" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Delhi to Chopta" target="_blank" rel="noopener noreferrer">
                       Book Delhi → Chopta
                     </a>
                   </Button>
                   <Button size="lg" className="bg-[#14b8a6] hover:bg-[#14b8a6]/90 text-white w-full md:w-auto" asChild>
-                    <a href="https://wa.me/919311344461?text=Hi, I want to book a cab from Chopta to Delhi" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919690707002?text=Hi, I want to book a cab from Chopta to Delhi" target="_blank" rel="noopener noreferrer">
                       Book Chopta → Delhi
                     </a>
                   </Button>
